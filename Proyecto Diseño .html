@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Técnico</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+
+            /* Cambia entre color o imagen de fondo aquí */
+            /* background-color: green; */
+            background: url('Fondo .jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        h1, marquee {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .menu-wrapper {
+            background-color: rgba(128, 0, 128, 0.8); /* Purple con transparencia */
+        }
+
+        .principal-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .principal-menu > li {
+            position: relative;
+        }
+
+        .principal-menu > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .principal-menu li:hover {
+            background-color: darkmagenta;
+        }
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(75, 0, 130, 0.9);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            min-width: 200px;
+            z-index: 1000;
+        }
+
+        .sub-menu li a {
+            display: block;
+            padding: 12px 16px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .sub-menu li a:hover {
+            background-color: indigo;
+        }
+
+        li:hover .sub-menu {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .principal-menu {
+                flex-direction: column;
+            }
+
+            .principal-menu > li > a {
+                text-align: center;
+                background-color: rgba(128, 0, 128, 0.9);
+            }
+
+            .sub-menu {
+                position: static;
+                display: none;
+            }
+
+            li:hover .sub-menu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        <font color="blue">P</font><font color="yellow">R</font><font color="red">O</font>
+        <font color="silver">Y</font><font color="green">E</font><font color="blue">C</font>
+        <font color="purple">T</font><font color="lime">O</font> _
+        <font color="blue">T</font><font color="gray">É</font><font color="peru">C</font>
+        <font color="black">N</font><font color="red">I</font><font color="lime">C</font><font color="teal">A</font> _
+        <font color="lime">I</font><font color="blue">N</font><font color="aqua">F</font><font color="purple">O</font>
+        <font color="fuchsia">R</font><font color="teal">M</font><font color="green">Á</font><font color="olive">T</font>
+        <font color="yellow">I</font><font color="red">C</font><font color="silver">A</font> 2024 - 2025
+    </h1>
+
+    <marquee bgcolor="#008000">PROYECTO TÉCNICO - ÁREA INFORMÁTICA</marquee>
+
+    <div class="menu-wrapper">
+        <ul class="principal-menu">
+            <li><a href="#">Programación y Base de Datos</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Diseño y Desarrollo Web</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Sistemas Operativos y Redes</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Soporte Técnico</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Aplicaciones en Ofimáticas</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Trimestre 1</a></li>
+                    <li><a href="#">Trimestre 2</a></li>
+                    <li><a href="#">Trimestre 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
